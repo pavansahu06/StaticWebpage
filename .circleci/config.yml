@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  build:
+    working_directory: ~/circleci-nodejs
+    docker:
+      - image: "circleci/node@3.0.0"
+    steps:
+      - checkout
+      - run: npm install
+
+workflows:
+  build_and_test:
+    jobs:
