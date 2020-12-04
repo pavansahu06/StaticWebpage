@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/circleci-nodejs
     docker:
-      - image: "circleci/node@3.0.0"
+      - image: "node:erbium-alpine3.9"
     steps:
       - checkout
       - run: npm install
